@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans NKo', sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: 'Noto Sans NKo', sans-serif;
+}
+
+body h1,
+body h2 {
+    color: goldenrod;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input, button {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 50%;
+    resize: none;
+}
+
+button {
+    background-color: #583e065e;
+    border: none;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 157, 0, 0.677);
+}
+
+.success-message {
+    background-color: #ffae00;
+    padding: 16px;
+    color: black;
+    display: none;
+    width: 50%;
+}
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 16px;
+    display: none;
+    width: 50%;
+}
