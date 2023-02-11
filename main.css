@@ -5,84 +5,121 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: #5D5B5C;
+html {
+    overflow-x: hidden;
 }
 
-header,
-form {
-    text-align: center;
+body{
+    background-color: #5d5b5c27;
 }
 
 header h1 {
     margin-bottom: 24px;
-    color: #fff;
-    font-family: monospace;
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+header, form, footer {
+    text-align: center;
 }
 
 header img {
-    width: 320px;
+    height: 200px;
+    padding: 22px;
 }
 
 button {
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+    background-color: rgba(230, 243, 255, 0.582);
+    font-size: 16px;
     text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 48px;
+    border-bottom: 2px solid black;
+    margin-bottom: 24px;
+    cursor: pointer;
 }
 
-input, button {
-    border-radius: 4px;
+#btnReset {
+    padding: 4px 16px;
+    background-color: antiquewhite;
+    margin-left: 8px;
 }
 
-#form-drag-menu {
+#btnReset:hover {
+    background-color: rgb(251, 222, 185);
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+#formDragMenu {
     border-bottom: 2px solid black;
 }
 
-#form-drag-menu button {
-    padding: 4px 48px;
-    border-bottom: 4px solid black;
-    margin-bottom: 16px;
-}
-
-#form-drag-menu button:hover,
-#form-write-task button:hover {
-    background-color: rgba(255, 255, 255, 0.749);
-}
-
-input, 
-#form-write-task button {
-    padding: 4px 16px;
-    border-bottom: 4px solid black;
-}
-
-#form-write-task {
-    background-color: #3d3d3d;
-    padding: 12px;
-    margin-bottom: 8px;
+#formSignUp {
     display: none;
+    margin-bottom: 50px;
 }
 
-ul {
-    padding: 24px;
+form h3 {
+    padding: 16px;
+    font-size: 24px;
+}
+
+.formField {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.formField input {
+    padding: 3px 22px;
+}
+
+.formField label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.containerButton {
+    display: inline-block;
+    width: 370px;
+    text-align: right;
     margin-top: 16px;
-    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.171);
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer, footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li {
     list-style: none;
-    font-size: 22px;
+    margin-left: 16px;
 }
 
-.taskNotDone:hover {
-    cursor: pointer;
+footer img {
+    height: 32px;
 }
 
-ul li h3 {
-    text-transform: uppercase;
-    font-size: 22px;
-    font-style: italic;
-}
-
-.taskDone {
-    text-decoration: line-through;
+.error {
+    color: rgb(159, 6, 6);
+    font-size: 14px;
 }
