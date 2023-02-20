@@ -1,0 +1,44 @@
+.container {
+    width: 400px;
+    text-align: center;
+}
+
+h1.display-1 {
+    padding: 36px 0 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+.col p {
+    color: #4e4e4e;
+    margin-bottom: 32px;
+}
+
+.col input {
+    margin-bottom: 16px;
+}
+
+form > label {
+    display: flex;
+    text-align: left;
+}
+
+.form-check {
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+form button {
+    width: 100%;
+}
+
+.error {
+    color: red;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 95%;
+    }
+}
