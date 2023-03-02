@@ -86,14 +86,14 @@ section {
     }
 
     .products {
-        grid-template-columns: repeat(2, 48.5%) !important;
-        column-gap: 3% !important;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
     .products {
-        display: block !important;
+        display: block;
 
         .product-item {
             margin-bottom: 32px;
